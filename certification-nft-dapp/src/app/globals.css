@@ -5,40 +5,40 @@
    in tailwind.config.js or PostCSS/Tailwind input files. */
 
 :root {
-  /* Updated theme to match professional blockchain dashboard aesthetic */
-  --background: oklch(0.08 0 0);
-  --foreground: oklch(0.98 0 0);
-  --card: oklch(0.12 0 0);
-  --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.12 0 0);
-  --popover-foreground: oklch(0.98 0 0);
-  --primary: oklch(0.65 0.2 264);
-  --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.18 0 0);
-  --secondary-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.15 0 0);
-  --muted-foreground: oklch(0.65 0 0);
-  --accent: oklch(0.2 0 0);
-  --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.62 0.25 29);
-  --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.2 0 0);
-  --input: oklch(0.15 0 0);
-  --ring: oklch(0.65 0.2 264);
-  --chart-1: oklch(0.65 0.2 264);
-  --chart-2: oklch(0.7 0.15 162);
-  --chart-3: oklch(0.75 0.18 70);
-  --chart-4: oklch(0.6 0.25 304);
-  --chart-5: oklch(0.65 0.24 16);
-  --radius: 0.5rem;
-  --sidebar: oklch(0.1 0 0);
-  --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: oklch(0.65 0.2 264);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.15 0 0);
-  --sidebar-accent-foreground: oklch(0.98 0 0);
-  --sidebar-border: oklch(0.2 0 0);
-  --sidebar-ring: oklch(0.65 0.2 264);
+  /* Twitter-inspired color scheme */
+  --background: #ffffff;
+  --foreground: #14171a;
+  --card: #ffffff;
+  --card-foreground: #14171a;
+  --popover: #ffffff;
+  --popover-foreground: #14171a;
+  --primary: #1da1f2;
+  --primary-foreground: #ffffff;
+  --secondary: #f7f9fa;
+  --secondary-foreground: #536471;
+  --muted: #f7f9fa;
+  --muted-foreground: #536471;
+  --accent: #e1e8ed;
+  --accent-foreground: #14171a;
+  --destructive: #e0245e;
+  --destructive-foreground: #ffffff;
+  --border: #e1e8ed;
+  --input: #f7f9fa;
+  --ring: #1da1f2;
+  --chart-1: #1da1f2;
+  --chart-2: #17bf63;
+  --chart-3: #ffd400;
+  --chart-4: #e0245e;
+  --chart-5: #794bc4;
+  --radius: 0.75rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #14171a;
+  --sidebar-primary: #1da1f2;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f7f9fa;
+  --sidebar-accent-foreground: #536471;
+  --sidebar-border: #e1e8ed;
+  --sidebar-ring: #1da1f2;
 
   /* Mapped theme variables (moved from @theme inline) */
   --font-sans: var(--font-geist-sans);
@@ -88,40 +88,40 @@
   --accent-green: #22c55e;
 }
 
-/* Dark-mode custom properties retained for .dark usage */
+/* Dark-mode custom properties - Twitter dark theme */
 .dark {
-  --background: oklch(0.08 0 0);
-  --foreground: oklch(0.98 0 0);
-  --card: oklch(0.12 0 0);
-  --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.12 0 0);
-  --popover-foreground: oklch(0.98 0 0);
-  --primary: oklch(0.65 0.2 264);
-  --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.18 0 0);
-  --secondary-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.15 0 0);
-  --muted-foreground: oklch(0.65 0 0);
-  --accent: oklch(0.2 0 0);
-  --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.62 0.25 29);
-  --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.2 0 0);
-  --input: oklch(0.15 0 0);
-  --ring: oklch(0.65 0.2 264);
-  --chart-1: oklch(0.65 0.2 264);
-  --chart-2: oklch(0.7 0.15 162);
-  --chart-3: oklch(0.75 0.18 70);
-  --chart-4: oklch(0.6 0.25 304);
-  --chart-5: oklch(0.65 0.24 16);
-  --sidebar: oklch(0.1 0 0);
-  --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: oklch(0.65 0.2 264);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.15 0 0);
-  --sidebar-accent-foreground: oklch(0.98 0 0);
-  --sidebar-border: oklch(0.2 0 0);
-  --sidebar-ring: oklch(0.65 0.2 264);
+  --background: #15202b;
+  --foreground: #ffffff;
+  --card: #192734;
+  --card-foreground: #ffffff;
+  --popover: #192734;
+  --popover-foreground: #ffffff;
+  --primary: #1da1f2;
+  --primary-foreground: #ffffff;
+  --secondary: #22303c;
+  --secondary-foreground: #8899a6;
+  --muted: #22303c;
+  --muted-foreground: #8899a6;
+  --accent: #2f3336;
+  --accent-foreground: #ffffff;
+  --destructive: #e0245e;
+  --destructive-foreground: #ffffff;
+  --border: #2f3336;
+  --input: #22303c;
+  --ring: #1da1f2;
+  --chart-1: #1da1f2;
+  --chart-2: #17bf63;
+  --chart-3: #ffd400;
+  --chart-4: #e0245e;
+  --chart-5: #794bc4;
+  --sidebar: #15202b;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #1da1f2;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #22303c;
+  --sidebar-accent-foreground: #8899a6;
+  --sidebar-border: #2f3336;
+  --sidebar-ring: #1da1f2;
 }
 
 /* Replace Tailwind-only @layer/@apply usage with standard CSS so parsers don't error */
@@ -158,6 +158,190 @@ body {
   }
 }
 
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutToRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
 .fade-in {
   animation: fadeIn 0.5s ease-in-out;
+}
+
+.slide-in-right {
+  animation: slideInFromRight 0.3s ease-out;
+}
+
+.slide-in-left {
+  animation: slideInFromLeft 0.3s ease-out;
+}
+
+.slide-out-left {
+  animation: slideOutToLeft 0.3s ease-in;
+}
+
+.slide-out-right {
+  animation: slideOutToRight 0.3s ease-in;
+}
+
+/* Telegram Mini App specific styles */
+.telegram-mini-app {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.telegram-tab-content {
+  position: relative;
+  overflow-y: auto;
+}
+
+.telegram-tab-content > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Telegram-inspired colors */
+.telegram-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.telegram-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.telegram-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.telegram-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+}
+
+.telegram-tab-bar {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced tab animations */
+@keyframes tabPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+@keyframes tabGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(102, 126, 234, 0);
+  }
+}
+
+.tab-active {
+  animation: tabPulse 2s infinite, tabGlow 2s infinite;
+}
+
+.tab-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tab-hover:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* Telegram Mini App specific responsive adjustments */
+@media (max-width: 480px) {
+  .telegram-mini-app {
+    max-width: 100vw;
+    border-radius: 0;
+  }
+
+  .telegram-tab-bar {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .telegram-card {
+    margin: 0 8px;
+  }
+}
+
+/* Telegram Web App API integration styles */
+.telegram-web-app {
+  /* Ensure proper touch targets */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* Safe area adjustments for different devices */
+@supports (padding: max(0px)) {
+  .telegram-tab-bar {
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+  }
+
+  .telegram-mini-app {
+    padding-top: env(safe-area-inset-top);
+  }
 }

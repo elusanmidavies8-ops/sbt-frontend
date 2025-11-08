@@ -5,10 +5,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CertificationNFT - TON Testnet",
-  description: "Blockchain-based certificate management system on TON",
-  icons: {
-    icon: "https://peach-fast-clam-38.mypinata.cloud/ipfs/bafkreid4gh6axv3j62mstkpkfhosg5ofpoop6yoviwr5tydnd6bz3xnone",
+  title: "TON Certificates",
+  description: "NFT Credentials on TON Blockchain",
+  viewport: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+  other: {
+    "telegram-web-app": "true",
   },
 };
 
@@ -19,7 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="telegram-web-app" content="true" />
+        <meta name="theme-color" content="#008080" />
+      </head>
+      <body className={`${inter.className} h-screen overflow-y-auto`}>
         <Providers>{children}</Providers>
       </body>
     </html>

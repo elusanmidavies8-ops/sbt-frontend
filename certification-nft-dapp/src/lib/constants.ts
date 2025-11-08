@@ -1,5 +1,5 @@
 export const CONTRACT_ADDRESS =
-  "EQDfuXpJnpadl39uvIctBQ22-GcL2c-AG7QGflTdc-w-7_Su"; // Replace with your deployed contract address
+  "kQDfuXpJnpadl39uvIctBQ22-GcL2c-AG7QGflTdc-w-708k";
 export const MAX_SUPPLY = 10000n;
 export const TESTNET_ENDPOINT = "https://testnet.toncenter.com/api/v2/jsonRPC";
 export const TESTNET_API_KEY =
@@ -15,4 +15,5 @@ export const OPCODES = {
   MINT: 2415581732,
   ADD_ADMIN: 3599441591,
 } as const;
-export const CERTIFICATE_NFT_DAPP_URL = "https://alphadaocert.vercel.app/";
+export const CERTIFICATE_NFT_DAPP_URL = "https://alphadao.vercel.app/";
+export const METADATA_BASE_URI = "https://peach-fast-clam-38.mypinata.cloud/ipfs/bafybeiedq3l22745663ebspnmozssslvek4roaw77lhn75eq3wipxqbxze/";

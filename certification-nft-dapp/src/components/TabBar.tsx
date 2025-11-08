@@ -1,0 +1,99 @@
+import { Home as HomeIcon, Grid3X3, Settings } from "lucide-react";
+
+interface TabBarProps {
+  isDarkMode: boolean;
+  activeTab: string;
+  handleTabChange: (tab: string) => void;
+}
+
+export function TabBar({ isDarkMode, activeTab, handleTabChange }: TabBarProps) {
+  return (
+    <nav className={`fixed bottom-0 left-0 right-0 z-50 border-t transition-colors duration-300 ${
+      isDarkMode
+        ? "bg-[#192734]/95 border-[#2f3336] backdrop-blur-xl"
+        : "bg-white/95 border-[#e1e8ed] backdrop-blur-xl"
+    }`}>
+      <div className="max-w-md mx-auto px-4 py-2">
+        <div className="flex items-center justify-around">
+          {/* Home Tab */}
+          <button
+            onClick={() => handleTabChange('home')}
+            className={`tab-hover flex flex-col items-center justify-center p-2 rounded-xl transition-all duration-300 min-w-[60px] relative ${
+              activeTab === 'home'
+                ? `tab-active transform scale-110 ${
+                    isDarkMode
+                      ? "bg-[#1da1f2]/20 text-[#1da1f2]"
+                      : "bg-[#1da1f2]/20 text-[#1da1f2]"
+                  }`
+                : `text-[#536471] hover:text-[#1da1f2] ${
+                    isDarkMode ? "hover:text-[#1da1f2]" : ""
+                  }`
+            }`}
+          >
+            <HomeIcon className={`w-6 h-6 mb-1 transition-all duration-300 ${
+              activeTab === 'home' ? "animate-pulse" : ""
+            }`} />
+            <span className="text-xs font-medium">Home</span>
+            {activeTab === 'home' && (
+              <div className={`absolute -top-1 left-1/2 transform -translate-x-1/2 w-8 h-1 rounded-full transition-colors duration-300 ${
+                isDarkMode ? "bg-[#1da1f2]" : "bg-[#1da1f2]"
+              }`} />
+            )}
+          </button>
+
+          {/* Gallery Tab */}
+          <button
+            onClick={() => handleTabChange('gallery')}
+            className={`tab-hover flex flex-col items-center justify-center p-2 rounded-xl transition-all duration-300 min-w-[60px] relative ${
+              activeTab === 'gallery'
+                ? `tab-active transform scale-110 ${
+                    isDarkMode
+                      ? "bg-[#1da1f2]/20 text-[#1da1f2]"
+                      : "bg-[#1da1f2]/20 text-[#1da1f2]"
+                  }`
+                : `text-[#536471] hover:text-[#1da1f2] ${
+                    isDarkMode ? "hover:text-[#1da1f2]" : ""
+                  }`
+            }`}
+          >
+            <Grid3X3 className={`w-6 h-6 mb-1 transition-all duration-300 ${
+              activeTab === 'gallery' ? "animate-pulse" : ""
+            }`} />
+            <span className="text-xs font-medium">Gallery</span>
+            {activeTab === 'gallery' && (
+              <div className={`absolute -top-1 left-1/2 transform -translate-x-1/2 w-8 h-1 rounded-full transition-colors duration-300 ${
+                isDarkMode ? "bg-[#1da1f2]" : "bg-[#1da1f2]"
+              }`} />
+            )}
+          </button>
+
+          {/* Admin Tab */}
+          <button
+            onClick={() => handleTabChange('admin')}
+            className={`tab-hover flex flex-col items-center justify-center p-2 rounded-xl transition-all duration-300 min-w-[60px] relative ${
+              activeTab === 'admin'
+                ? `tab-active transform scale-110 ${
+                    isDarkMode
+                      ? "bg-[#1da1f2]/20 text-[#1da1f2]"
+                      : "bg-[#1da1f2]/20 text-[#1da1f2]"
+                  }`
+                : `text-[#536471] hover:text-[#1da1f2] ${
+                    isDarkMode ? "hover:text-[#1da1f2]" : ""
+                  }`
+            }`}
+          >
+            <Settings className={`w-6 h-6 mb-1 transition-all duration-300 ${
+              activeTab === 'admin' ? "animate-pulse" : ""
+            }`} />
+            <span className="text-xs font-medium">Admin</span>
+            {activeTab === 'admin' && (
+              <div className={`absolute -top-1 left-1/2 transform -translate-x-1/2 w-8 h-1 rounded-full transition-colors duration-300 ${
+                isDarkMode ? "bg-[#1da1f2]" : "bg-[#1da1f2]"
+              }`} />
+            )}
+          </button>
+        </div>
+      </div>
+    </nav>
+  );
+}
